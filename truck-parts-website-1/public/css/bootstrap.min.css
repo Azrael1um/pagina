@@ -1,0 +1,73 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo dos títulos */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+/* Estilo do carrossel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 20%; /* Cada item ocupa 20% do espaço (5 itens visíveis) */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
